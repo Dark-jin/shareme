@@ -19,10 +19,11 @@ const KakaoShareButton = () => {
         content: {
           title: "타이틀",
           description: "#리액트 #카카오 #공유버튼",
-          imageUrl: "IMAGE_URL", // i.e. process.env.FETCH_URL + '/logo.png'
+          imageUrl:
+            "http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png",
           link: {
-            mobileWebUrl: window.location.href,
-            webUrl: window.location.href,
+            mobileWebUrl: "https://dark-jin.vercel.app",
+            webUrl: "https://dark-jin.vercel.app",
           },
         },
         social: {
@@ -34,15 +35,15 @@ const KakaoShareButton = () => {
           {
             title: "웹으로 보기",
             link: {
-              mobileWebUrl: window.location.href,
-              webUrl: window.location.href,
+              mobileWebUrl: "https://dark-jin.vercel.app",
+              webUrl: "https://dark-jin.vercel.app",
             },
           },
           {
             title: "앱으로 보기",
             link: {
-              mobileWebUrl: window.location.href,
-              webUrl: window.location.href,
+              mobileWebUrl: "https://dark-jin.vercel.app",
+              webUrl: "https://dark-jin.vercel.app",
             },
           },
         ],
@@ -50,11 +51,7 @@ const KakaoShareButton = () => {
     }
   };
   return (
-    <div>
-      <button>
-        <img src="/icons/kakao.png" alt="kakao-share-icon" />
-      </button>
-    </div>
+    <img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"></img>
   );
 };
 export default KakaoShareButton;

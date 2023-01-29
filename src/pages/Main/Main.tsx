@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -9,7 +10,7 @@ const Main = () => {
   return (
     <>
       <h1>Hello World!</h1>
-      <button onClick={sharepage}></button>
+      <Button onClick={sharepage}>공유하기</Button>
     </>
   );
 };
