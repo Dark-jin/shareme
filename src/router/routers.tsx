@@ -1,5 +1,5 @@
 import { Main } from "../pages";
-import Share from "../pages/Sharepage";
+import Sharepage from "../pages/Sharepage";
 
 const Router = [
   {
@@ -10,7 +10,7 @@ const Router = [
   {
     title: "카카오톡 공유하기",
     url: "Sharepage",
-    component: <Share />,
+    component: <Sharepage />,
   },
 ];
 export default Router;
