@@ -1,5 +1,5 @@
+import KakaoShareButton from "../components/KakoShareButton";
 import { Main } from "../pages";
-import Sharepage from "../pages/Sharepage";
 
 const Router = [
   {
@@ -8,9 +8,9 @@ const Router = [
     component: <Main />,
   },
   {
-    title: "카카오톡 공유하기",
-    url: "Sharepage",
-    component: <Sharepage />,
+    title: "카카오 공유",
+    url: "KakaoShareButton",
+    component: <KakaoShareButton />,
   },
 ];
 export default Router;
