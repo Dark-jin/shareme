@@ -7,10 +7,14 @@ const Main = () => {
   const sharebutton = () => {
     navigate("/KakaoShareButton");
   };
+  const dragbutton = () => {
+    navigate("/DragTest");
+  };
   return (
     <>
       <h1>Hello World!</h1>
       <Button onClick={sharebutton}>공유하기</Button>
+      <Button onClick={dragbutton}>드래그 테스트</Button>
     </>
   );
 };
