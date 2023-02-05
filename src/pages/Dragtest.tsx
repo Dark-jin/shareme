@@ -39,10 +39,10 @@ const Dragtest = () => {
     <div>
       <h1>react-beautiful-dnd Demo</h1>
       <DragDropContext onDragEnd={handleOnDragEnd}>
-        <Droppable droppableId="first-box" direction="horizontal">
+        <Droppable droppableId="first-box">
           {(provided) => (
             <ul
-              className=""
+              className="list-none"
               {...provided.droppableProps}
               ref={provided.innerRef}
             >
@@ -51,6 +51,7 @@ const Dragtest = () => {
                   <Draggable key={id} draggableId={id} index={index}>
                     {(provided) => (
                       <li
+                        className="list-none align-middle border-solid mt-5 pb-4 pt-4"
                         ref={provided.innerRef}
                         {...provided.draggableProps}
                         {...provided.dragHandleProps}
