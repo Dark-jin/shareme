@@ -14,6 +14,14 @@ const data = [
     id: "3",
     text: "third",
   },
+  {
+    id: "4",
+    text: "원숭이",
+  },
+  {
+    id: "5",
+    text: "코끼리",
+  },
 ];
 
 const Dragtest = () => {
@@ -33,7 +41,11 @@ const Dragtest = () => {
       <DragDropContext onDragEnd={handleOnDragEnd}>
         <Droppable droppableId="first-box" direction="horizontal">
           {(provided) => (
-            <ul {...provided.droppableProps} ref={provided.innerRef}>
+            <ul
+              className=""
+              {...provided.droppableProps}
+              ref={provided.innerRef}
+            >
               {testState.map(({ id, text }, index) => {
                 return (
                   <Draggable key={id} draggableId={id} index={index}>
