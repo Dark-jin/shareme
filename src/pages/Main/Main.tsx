@@ -10,11 +10,15 @@ const Main = () => {
   const dragbutton = () => {
     navigate("/DragTest");
   };
+  const adddndbutton = () => {
+    navigate("/AddDnd");
+  };
   return (
     <>
       <h1>Hello World!</h1>
       <Button onClick={sharebutton}>공유하기</Button>
       <Button onClick={dragbutton}>드래그 테스트</Button>
+      <Button onClick={adddndbutton}>추가 드래그 테스트</Button>
     </>
   );
 };
