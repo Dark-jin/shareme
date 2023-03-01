@@ -1,12 +1,13 @@
 import { Button } from "@mui/material";
 import React, { useEffect } from "react";
+
+const { VITE_APP_KAKAO_KEY } = import.meta.env;
+
 const myurl = "https://dark-jin.vercel.app";
 const KakaoShareButton = () => {
-  //const JAVASCRIPT_KEY = process.env.REACT_APP_JAVASCRIPT_KEY;
+  const kakaokey = VITE_APP_KAKAO_KEY;
   useEffect(() => {
-    window.Kakao.init("bb4d58887f192f9464e3d710ed6ba4cd");
-    //window.Kakao.init(JAVASCRIPT_KEY);
-    console.log(window.Kakao.isInitialized());
+    window.Kakao.init(kakaokey);
   }, []);
   const kakashare = () => {
     window.Kakao.Share.createDefaultButton({
