@@ -3,10 +3,6 @@ import React, { useEffect } from "react";
 
 export const KakaoChannel = () => {
   const channel = () => {
-    // window.Kakao.Channel.chat({
-    //   container: "#kakao-talk-channel-chat-button",
-    //   channelPublicId: "_uAxikxj/chat",
-    // });
     window.Kakao.Channel.createChatButton({
       container: "#kakao-talk-channel-chat-button",
       channelPublicId: "_uAxikxj",
