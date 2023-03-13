@@ -1,14 +1,9 @@
 import { Button } from "@mui/material";
 import React, { useEffect } from "react";
 
-const { VITE_APP_KAKAO_KEY } = import.meta.env;
-
-const myurl = "https://dark-jin.vercel.app";
 const KakaoShareButton = () => {
-  const kakaokey = VITE_APP_KAKAO_KEY;
-  useEffect(() => {
-    window.Kakao.init(kakaokey);
-  }, []);
+  const myurl = "https://dark-jin.vercel.app";
+
   const kakashare = () => {
     window.Kakao.Share.createDefaultButton({
       container: "#kakao-share-btn",
