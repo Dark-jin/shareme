@@ -1,5 +1,5 @@
 import KakaoShareButton from "../components/KakoShareButton";
-import Tosspay from "../pages/Tosspay";
+import { KakaoChannel } from "../components/KakaoChannel";
 import { Main } from "../pages";
 
 const Router = [
@@ -10,13 +10,13 @@ const Router = [
   },
   {
     title: "카카오 공유",
-    url: "KakaoShareButton",
+    url: "/KakaoShareButton",
     component: <KakaoShareButton />,
   },
   {
-    title: "토스 결제창",
-    url: "Tosspay",
-    component: <Tosspay />,
+    title: "카카오 채널",
+    url: "/KakaoChannel",
+    component: <KakaoChannel />,
   },
 ];
 export default Router;
